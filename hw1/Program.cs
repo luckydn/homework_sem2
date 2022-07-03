@@ -5,8 +5,8 @@
 
 
 int randomNumber = new Random().Next(100, 999);
-int result = randomNumber;
-int number1 = result / 100;
-int number2 = (result % 100) / 10;
-int number3 = result % 10;
-Console.WriteLine($"Случайное число {result} --> {number1}{number3}");
+Console.WriteLine(randomNumber);
+int number1 = randomNumber / 100;
+int number3 = randomNumber % 10;
+int result = number1 * 10 + number3;
+Console.WriteLine($"{result}");
